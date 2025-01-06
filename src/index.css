@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+}
+
+/* Body Styles */
+body {
+  background-color: #131313; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 16px; /* Base font size */
+}
+
+/* Header Navigation */
+nav {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+/* Smooth Scroll for Unveiling Resume */
+.resume-container {
+  position: relative;
+  animation: unveil 0.8s ease-out;
+  max-height: 1000px;
+}
+
+.resume-container img {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Animation for Resume Button */
+.resume-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Paragraph and Text Styling */
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+/* Smooth Reveal Animation */
+@keyframes unveil {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+    padding: 20px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resume-container img {
+    max-width: 100%;
+  }
+}
