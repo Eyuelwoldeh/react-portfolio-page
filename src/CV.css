@@ -1,7 +1,81 @@
-.CV {
-    justify-items: center;
-}
-
-img {
-    width: 1000px;
-}
+.cv-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    color: #f9f9f9; /* Light text for visibility */
+  }
+  
+  .cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f9f9f9;
+  }
+  
+  .cv-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Bright white for header */
+    margin-bottom: 5px;
+  }
+  
+  .cv-header .cv-contact {
+    font-size: 1rem;
+    color: #cccccc; /* Light gray for contrast */
+  }
+  
+  .cv-header a {
+    color: #4facff; /* Light blue for links */
+    text-decoration: none;
+  }
+  
+  .cv-header a:hover {
+    text-decoration: underline;
+  }
+  
+  .cv-section {
+    margin-bottom: 40px;
+    color: #f9f9f9;
+  }
+  
+  .cv-section h2 {
+    font-size: 1.8rem;
+    color: #ffffff; /* Bright white for section headers */
+    border-bottom: 2px solid #4facff; /* Light blue for accent */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .cv-item h3 {
+    font-size: 1.4rem;
+    color: #e6e6e6; /* Off-white for job titles */
+    margin-bottom: 5px;
+  }
+  
+  .cv-item p {
+    margin: 5px 0 15px;
+    color: #d9d9d9; /* Light gray for descriptions */
+  }
+  
+  .cv-item ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .cv-item li {
+    margin-bottom: 10px;
+    color: #d9d9d9; /* Light gray for list items */
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #4facff; /* Light blue for links */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
