@@ -12,7 +12,7 @@ function CV() {
           <p>
             <strong>Bachelor of Arts:</strong> Computer Science & Quantitative Economics
             <br />
-            <strong>GPA:</strong> 3.81 / 4.00 | Dean’s List | Presidential Scholar
+            <strong>GPA:</strong> 3.81 / 4.00 | Dean's List | Presidential Scholar
             <br />
             <strong>Activities:</strong> Algorithms Club, Chess Club, East African Student Association (EASA)
             <br />
@@ -36,7 +36,7 @@ function CV() {
       <section className="cv-section">
         <h2>Professional Experience</h2>
         <div className="cv-item">
-          <h3>Jmol – Molecular Visualization Software</h3>
+          <h3>Jmol - Molecular Visualization Software</h3>
           <p><em>Software Development & UX Design Intern</em></p>
           <ul>
             <li>Redesigned UI/UX for 2.4M+ monthly users using Java, JSmol, and WebGL.</li>
@@ -46,7 +46,7 @@ function CV() {
         </div>
         <div className="cv-item">
           <h3>LIWOT Engineering</h3>
-          <p><em>Full-Stack Software Engineering Intern</em> | Aug. 2024 – Dec. 2024</p>
+          <p><em>Full-Stack Software Engineering Intern</em> | Aug. 2024 - Dec. 2024</p>
           <ul>
             <li>Developed a modular inventory system with C# and PostgreSQL.</li>
             <li>Designed a React.js dashboard, reducing logging times by 75%.</li>
@@ -59,7 +59,7 @@ function CV() {
         <h2>Projects</h2>
         <div className="cv-item">
           <h3>AI-Driven Fraud Detection Engine</h3>
-          <p>St. Olaf College | Nov. 2024 – Present</p>
+          <p>St. Olaf College | Nov. 2024 - Present</p>
           <ul>
             <li>Deployed fraud detection pipeline using Kafka, PySpark, and AWS with 91.3% precision.</li>
             <li>Reduced false positives by 26% with an ML model built in scikit-learn.</li>
@@ -67,7 +67,7 @@ function CV() {
         </div>
         <div className="cv-item">
           <h3>Full-Stack Sentiment Analysis Pipeline</h3>
-          <p>St. Olaf College | Oct. 2024 – Dec. 2024</p>
+          <p>St. Olaf College | Oct. 2024 - Dec. 2024</p>
           <ul>
             <li>Implemented Reddit sentiment analysis pipeline using Kafka and PySpark.</li>
             <li>Built React and D3.js dashboard for trend visualization.</li>
@@ -79,7 +79,7 @@ function CV() {
         <h2>Leadership & Co-Curricular</h2>
         <div className="cv-item">
           <h3>The Street Smarts</h3>
-          <p><em>Junior Board Member</em> | Nov. 2024 – Present</p>
+          <p><em>Junior Board Member</em> | Nov. 2024 - Present</p>
           <ul>
             <li>Supported financial literacy programs for 500+ students nationwide.</li>
             <li>Collaborated with senior board members on diversity-focused initiatives.</li>
@@ -87,7 +87,7 @@ function CV() {
         </div>
         <div className="cv-item">
           <h3>St. Olaf Consulting Group</h3>
-          <p><em>Strategy Consulting Analyst</em> | Sept. 2024 – Present</p>
+          <p><em>Strategy Consulting Analyst</em> | Sept. 2024 - Present</p>
           <ul>
             <li>Assisted in divestiture efforts for a legacy business.</li>
             <li>Developed centralized SQL database and delivered key reports.</li>
