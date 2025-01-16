@@ -45,7 +45,7 @@ function AboutMe() {
       <section id="about">
       <h2>Personal Life</h2>
       <p>
-      I'm originally from Northfield, MN, but my ambitions extend far beyond local horizons. I'm passionate about football (soccer) and rarely miss a chance to follow my favorite teams. 
+      I'm passionate about football (soccer) and rarely miss a chance to follow my favorite teams. 
       In my downtime, I enjoy coding personal projects, exploring financial markets, and learning new tools that push the boundaries of what I can create.
       </p>
       <p>
