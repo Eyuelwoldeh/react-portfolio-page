@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
 
 function Contact() {
   return (
@@ -8,6 +8,8 @@ function Contact() {
       <p style={styles.intro}>
         I'd love to hear from you! Whether it's a question, an opportunity, or just a chat, feel free to reach out.
       </p>
+      
+      {/* Contact Links */}
       <div style={styles.contactLinks}>
         <a
           href="mailto:woldeh1@stolaf.edu"
@@ -37,7 +39,31 @@ function Contact() {
           <FaGithub style={styles.icon} />
           github.com/woldehanna
         </a>
+        <a
+          href="/path-to-resume.pdf" // Replace with the actual path to your resume
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.link}
+          aria-label="Download my resume"
+        >
+          <FaFileDownload style={styles.icon} />
+          Download Resume
+        </a>
       </div>
+      
+      {/* Contact Form */}
+      <form style={styles.form}>
+        <label htmlFor="name" style={styles.label}>Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" style={styles.input} required />
+
+        <label htmlFor="email" style={styles.label}>Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" style={styles.input} required />
+
+        <label htmlFor="message" style={styles.label}>Message:</label>
+        <textarea id="message" name="message" placeholder="Your message" style={styles.textarea} rows="5" required></textarea>
+
+        <button type="submit" style={styles.button}>Send Message</button>
+      </form>
     </section>
   );
 }
@@ -77,6 +103,44 @@ const styles = {
   },
   icon: {
     fontSize: '1.5rem',
+  },
+  form: {
+    marginTop: '30px',
+    textAlign: 'left',
+    maxWidth: '600px',
+    margin: '0 auto',
+  },
+  label: {
+    display: 'block',
+    marginBottom: '5px',
+    fontWeight: 'bold',
+    color: '#f9f9f9',
+  },
+  input: {
+    width: '100%',
+    padding: '10px',
+    marginBottom: '15px',
+    borderRadius: '5px',
+    border: '1px solid #ccc',
+  },
+  textarea: {
+    width: '100%',
+    padding: '10px',
+    marginBottom: '15px',
+    borderRadius: '5px',
+    border: '1px solid #ccc',
+  },
+  button: {
+    padding: '10px 20px',
+    backgroundColor: '#0077b5',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '1rem',
+  },
+  buttonHover: {
+    backgroundColor: '#005fa3',
   },
 };
 
