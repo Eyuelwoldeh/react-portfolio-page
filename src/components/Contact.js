@@ -1,7 +1,43 @@
-import React from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Contact() {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(formRef.current);
+    const templateParams = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    };
+
+    console.log(process.env.REACT_APP_EMAILJS_USER_ID);
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+    console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams, // params
+        process.env.REACT_APP_EMAILJS_USER_ID,
+      )
+      .then(
+        (result) => {
+          console.log('Message sent successfully:', result.text);
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('Error sending message:', error.text);
+          alert('Failed to send the message. Please try again.');
+        }
+      );
+  };
+
   return (
     <section id="contact" style={styles.section}>
       <h1 style={styles.heading}>Get in Touch</h1>
@@ -39,20 +75,10 @@ function Contact() {
           <FaGithub style={styles.icon} />
           github.com/woldehanna
         </a>
-        <a
-          href="/path-to-resume.pdf" // Replace with the actual path to your resume
-          target="_blank"
-          rel="noopener noreferrer"
-          style={styles.link}
-          aria-label="Download my resume"
-        >
-          <FaFileDownload style={styles.icon} />
-          Download Resume
-        </a>
       </div>
       
       {/* Contact Form */}
-      <form style={styles.form}>
+      <form ref={formRef} onSubmit={sendEmail} style={styles.form}>
         <label htmlFor="name" style={styles.label}>Name:</label>
         <input type="text" id="name" name="name" placeholder="Your name" style={styles.input} required />
 
